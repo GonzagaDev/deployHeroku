@@ -3,6 +3,6 @@ var app = require('./config/express');
 
 http
   .createServer(app)
-  .listen(8080, function(){
-    console.log('Serviço iniciado na porta 8080');
+  .listen(5000, function(){
+    console.log('Serviço iniciado na porta 5000');
   });
