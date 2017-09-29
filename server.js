@@ -1,8 +1,9 @@
 var http = require('http');
 var app = require('./config/express');
+var porta = process.env.PORT || 8080;
 
 http
   .createServer(app)
-  .listen(5000, function(){
-    console.log('Serviço iniciado na porta 5000');
+  .listen(porta, function(){
+    console.log('Serviço iniciado na porta'+porta);
   });
